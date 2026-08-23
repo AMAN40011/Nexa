@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
-          <div>
-            <h3 className="text-xl font-semibold">NexaTech</h3>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8  text-center md:text-left">
+          <div className="md:col-span-2">
+           <div className="flex gap-2"><img src="/logo.png" alt="NexaTech Logo" className="w-8 h-8" /><h3 className="text-xl font-semibold">NexaTech</h3></div> 
 
             <p className="mt-4 text-gray-400">
               We build modern digital solutions that help businesses grow.

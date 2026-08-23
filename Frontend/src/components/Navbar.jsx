@@ -15,7 +15,7 @@ const Navbar = () => {
      
   return (
     <nav className="flex justify-between items-center px-8 py-4 shadow-md bg-white sticky top-0 z-50 relative">
-      <h1>NexaTech</h1>
+       <div className="flex gap-2"><img src="/logo.png" alt="NexaTech Logo" className="w-8 h-8" /><h3 className="text-xl font-semibold">NexaTech</h3></div>
        <div className='hidden md:flex gap-8'>
        {
        navLinks.map((link)=>(
