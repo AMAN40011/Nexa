@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 
 const Pricing = () => {
   return (
@@ -22,9 +23,7 @@ const Pricing = () => {
             <p>✓ 5 Pages</p>
             <p>✓ Basic Support</p>
           </div>
-          <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
-            Get Started
-          </button>
+           <Button className="mt-6 w-full">Get Started</Button>
         </div>
         <div className="border border-blue-600 rounded-xl p-6 shadow-lg  hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
          
@@ -39,9 +38,7 @@ const Pricing = () => {
             <p>✓ 10 Pages</p>
             <p>✓ Priority Support</p>
           </div>
-          <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-color duration-300 cursor-pointer">
-            Get Started
-          </button>
+          <Button className="mt-6 w-full">Get Started</Button>
         </div>
         <div className="h-full border rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
           <h3 className="text-xl font-semibold">Premium</h3>
@@ -52,9 +49,7 @@ const Pricing = () => {
             <p>✓ Unlimited Pages</p>
             <p>✓ Premium Support</p>
           </div>
-          <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
-            Get Started
-          </button>
+           <Button className="mt-6 w-full">Get Started</Button>
         </div>
       </div>
     </section>

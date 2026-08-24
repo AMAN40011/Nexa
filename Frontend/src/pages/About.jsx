@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 
 const About = () => {
   return (
@@ -17,9 +18,7 @@ const About = () => {
             Our team creates modern and reliable digital solutions for
             businesses.
           </p>
-          <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
-            Learn More
-          </button>
+          <Button className="mt-6">Learn More</Button>
         </div>
         <div className="w-full md:w-1/2">
           <img

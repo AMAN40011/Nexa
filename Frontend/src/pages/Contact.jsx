@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 
 const Contact = () => {
   return (
@@ -58,9 +59,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <div className="flex justify-center md:justify-between">
-            <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
-            Send Message
-          </button>
+           <Button className="mt-6">Send Message</Button>
           </div>
           
         </div>

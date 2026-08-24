@@ -1,4 +1,5 @@
 import React from "react";
+import Loader from "./Loader";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Build Amazing Digital Solutions
           </h1>
-
+           
           <p className="mt-6 text-lg text-gray-600">
             We help businesses grow with modern web applications, mobile
             solutions, and innovative digital experiences.

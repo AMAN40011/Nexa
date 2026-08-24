@@ -3,6 +3,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaPaintBrush } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa";
+import Card from "../components/Card";
 
 const Services = () => {
   return (
@@ -12,57 +13,34 @@ const Services = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3  mt-12 gap-6">
-        <div className=" group border p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-600">
-              <FaLaptopCode className="text-3xl text-blue-600 group-hover:text-white" />
-            </div>
-
-            <h3 className="text-xl font-semibold">Web Development</h3>
-          </div>
-          <p className="mt-3 text-gray-600">
-            We build fast, responsive, and modern web applications.
-          </p>
-        </div>
-       <div className="group border p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-  <div className="flex items-center gap-3">
-    <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-600">
-      <FaMobileAlt className="text-3xl text-blue-600 group-hover:text-white" />
-    </div>
-
-    <h3 className="text-xl font-semibold">Mobile Development</h3>
-  </div>
-
-  <p className="mt-3 text-gray-600">
-    We create modern and responsive mobile applications.
-  </p>
-</div>
-        <div className="group border p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-  <div className="flex items-center gap-3">
-    <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-600">
-      <FaPaintBrush className="text-3xl text-blue-600 group-hover:text-white" />
-    </div>
-
-    <h3 className="text-xl font-semibold">UI/UX Design</h3>
-  </div>
-
-  <p className="mt-3 text-gray-600">
-    We design clean and engaging digital experiences.
-  </p>
-</div>
-         <div className="group border p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-  <div className="flex items-center gap-3">
-    <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-600">
-      <FaCloud className="text-3xl text-blue-600 group-hover:text-white" />
-    </div>
-
-    <h3 className="text-xl font-semibold">Cloud Solutions</h3>
-  </div>
-
-  <p className="mt-3 text-gray-600">
-    We provide scalable and reliable cloud solutions.
-  </p>
-</div>
+        <Card
+          icon={
+            <FaLaptopCode className="text-3xl text-blue-600 group-hover:text-white" />
+          }
+          title="Web Development"
+          description="We build fast, responsive, and modern web applications."
+        />
+        <Card
+          icon={
+            <FaMobileAlt className="text-3xl text-blue-600 group-hover:text-white" />
+          }
+          title="Mobile Development"
+          description="We create modern and responsive mobile applications."
+        />
+        <Card
+          icon={
+            <FaPaintBrush className="text-3xl text-blue-600 group-hover:text-white" />
+          }
+          title="UI/UX Design"
+          description="We design clean and engaging digital experiences."
+        />
+        <Card
+          icon={
+            <FaCloud className="text-3xl text-blue-600 group-hover:text-white" />
+          }
+          title="Cloud Solutions"
+          description="We provide scalable and reliable cloud solutions."
+        />
       </div>
     </section>
   );
