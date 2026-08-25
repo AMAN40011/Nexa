@@ -1,5 +1,6 @@
 import React from "react";
 import Loader from "./Loader";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -15,16 +16,12 @@ const Hero = () => {
             solutions, and innovative digital experiences.
           </p>
           <div className="flex justify-center md:justify-start gap-4 mt-8">
-            <button
-              className="font-semibold bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer hover:-translate-y-1
-              transition-transform"
-            >
-              Get Started
-            </button>
+           
+            <Button className="hover:-translate-y-1
+              transition-transform">Get Started</Button>
 
-            <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-600 hover:text-white transition-colors transition-transform duration-300 hover:-translate-y-1 cursor-pointer">
-              Learn More
-            </button>
+            
+            <Button variant="secondary">Learn More</Button>
           </div>
         </div>
         <div className="w-full md:w-1/2 mt-10 md:mt-0">

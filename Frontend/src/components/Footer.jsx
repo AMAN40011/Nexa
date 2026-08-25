@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8  text-center md:text-left">
           <div className="md:col-span-2">
-            <div className="flex gap-2 items-center justify-center">
+           <div className="flex gap-2 items-center justify-center md:justify-start">
               <img src="/logo.png" alt="NexaTech Logo" className="w-8 h-8" />
               <h3 className="text-xl font-semibold">NexaTech</h3>
             </div>

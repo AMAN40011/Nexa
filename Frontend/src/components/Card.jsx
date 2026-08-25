@@ -17,6 +17,7 @@ const Card = ({icon,title,description}) => {
       <p className="mt-3 text-gray-600">
         {description}
       </p>
+       
 
     </div>
   )

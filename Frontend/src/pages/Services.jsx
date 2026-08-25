@@ -26,7 +26,7 @@ const Services = () => {
           }
           title="Mobile Development"
           description="We create modern and responsive mobile applications."
-        />
+        >  </Card>
         <Card
           icon={
             <FaPaintBrush className="text-3xl text-blue-600 group-hover:text-white" />
