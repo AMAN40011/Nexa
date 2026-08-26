@@ -4,17 +4,25 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-8 py-12">
+      <div className="max-w-7xl mx-auto px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8  text-center md:text-left">
           <div className="md:col-span-2">
            <div className="flex gap-2 items-center justify-center md:justify-start">
-              <img src="/logo.png" alt="NexaTech Logo" className="w-8 h-8" />
+              <img src="/logo8.png" alt="NexaTech Logo" className="w-8 h-8" />
               <h3 className="text-xl font-semibold">NexaTech</h3>
             </div>
 
             <p className="mt-4 text-gray-400">
               We build modern digital solutions that help businesses grow.
             </p>
+
+            <div className="flex gap-3 mt-3 text-center justify-center md:justify-start">
+              <img src="/facebook_logo.svg"/>
+              <img src="/gmail_logo.svg"/>
+              <img src="/instagram_logo.svg"/>
+              <img src="/twitter_logo.svg"/>
+              
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Quick Links</h3>

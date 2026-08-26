@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -12,10 +12,16 @@ const Navbar = () => {
   { name: "Services", path: "/services" },
   { name: "Contact", path: "/contact" },
 ];
+
+const navigate =useNavigate();
+
+const Move=()=>{
+  navigate('/');
+}
      
   return (
-    <nav className="flex justify-between items-center px-8 py-4 shadow-md bg-white sticky top-0 z-50 relative">
-       <div className="flex gap-2"><img src="/logo.png" alt="NexaTech Logo" className="w-8 h-8" /><h3 className="text-xl font-semibold">NexaTech</h3></div>
+    <nav className="flex justify-between items-center px-10 py-2 shadow-md bg-white sticky top-0 z-50 relative">
+      <img src="/MainLogo.png" alt="NexaTech Logo" className="w-40 h-14 cursor-pointer" onClick={()=>Move()}/>
        <div className='hidden md:flex gap-8'>
        {
        navLinks.map((link)=>(
