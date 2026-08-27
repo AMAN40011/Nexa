@@ -1,23 +1,28 @@
 import React from "react";
 import Button from "../components/Button";
-
+import { FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
     <section className="max-w-7xl mx-auto px-8 py-20">
-      <h2 className="text-3xl md:text-4xl font-bold text-center">Contact Us</h2>
-      <p className="mt-4 text-gray-600 text-center">
-        Have a project in mind? We'd love to hear from you.
-      </p>
-      <div className="flex flex-col md:flex-row gp-10 mt-12">
+      <div className="flex flex-col md:flex-row gp-10 mt-10">
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h3 className="text-2xl font-semibold">Get In Touch</h3>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            Let's Start a <br />
+            <span className="text-blue-600">Conversation </span>
+          </h2>
           <p className="mt-4 text-gray-600">
-            We'd love to hear from you. Reach out to us and let's discuss your
-            project.
+            Whether you have a new project, need technical guidance,
+            <br /> or simply want to explore an idea, our team is ready to help.
           </p>
+
           <div className="mt-6">
-            <h4 className="font-semibold">Email</h4>
-            <p className="text-gray-600">nexaTech@gmail.com</p>
+            <div></div>
+            <div>
+              <h4 className="font-semibold">Email</h4>
+              <p className="text-gray-600">
+                hello@nexatech.com info@nexatech.com
+              </p>
+            </div>
           </div>
           <div className="mt-4">
             <h4 className="font-semibold">Phone</h4>
@@ -59,9 +64,8 @@ const Contact = () => {
             ></textarea>
           </div>
           <div className="flex justify-center md:justify-between">
-           <Button className="mt-6">Send Message</Button>
+            <Button className="mt-6">Send Message</Button>
           </div>
-          
         </div>
       </div>
     </section>

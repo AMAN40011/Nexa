@@ -7,7 +7,7 @@ import Team from "../components/Team";
 const About = () => {
   return (
     <>
-      <section className="max-w-7xl mx-auto px-8 py-20 mb-15">
+      <section className="max-w-7xl mx-auto px-8 py-20 mb-15 bg-gradient-to-r from-transparent via-blue-50 to-transparent">
         <h2 className="text-3xl md:text-5xl font-bold text-center">
           Building <span className="text-blue-600">Digital </span> Experiences
           That Matter

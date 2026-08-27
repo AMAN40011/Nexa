@@ -17,7 +17,11 @@ const Card = ({icon,title,description}) => {
       <p className="mt-3 text-gray-600">
         {description}
       </p>
+       <div className='mt-4'>
+        <a href="#" className='text-blue-600'> Learn More → </a>
+       </div>
        
+      
 
     </div>
   )

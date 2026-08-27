@@ -30,7 +30,7 @@ const OurStory = () => {
     },
   ];
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20">
+    <section className="max-w-7xl mx-auto px-8 py-20 bg-gradient-to-r from-transparent via-blue-50 to-transparent">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left side */}
         <div>
@@ -94,7 +94,7 @@ const OurStory = () => {
           />
         </div>
       </div>
-      <div className="mt-20">
+      <div className="mt-20 ">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           Our <span className="text-blue-600">Journey</span> 
         </h2>
