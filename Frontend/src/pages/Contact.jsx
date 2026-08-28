@@ -6,9 +6,12 @@ import { FaHeadset } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import {  FaReply } from "react-icons/fa";
+import ContactMain from "../components/ContactMain";
 
 const Contact = () => {
   return (
+    <>
+    <ContactMain/>
     <section className="max-w-7xl mx-auto px-8 py-20">
       <div className="flex flex-col md:flex-row  mt-10">
         <div className="w-full md:w-1/2 text-center md:text-left  flex flex-col items-center md:items-start">
@@ -140,6 +143,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
