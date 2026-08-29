@@ -37,7 +37,7 @@ const Team = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20 ">
+    <section id="team" className="max-w-7xl mx-auto px-8 py-20 ">
       <div className=" flex flex-col max-w-2xl mx-auto text-center">
         <div>
           <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-blue-100 text-blue-500 rounded-2xl font-semibold">

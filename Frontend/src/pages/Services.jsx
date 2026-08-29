@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <>
       <ServiceMain />
-      <section className=" mt-20 md:mt-0 max-w-7xl mx-auto px-8 pt-10 pb-20">
+      <section id="Technologies" className=" mt-20 md:mt-0 max-w-7xl mx-auto px-8 pt-10 pb-20">
         <h4 className="text-center font-semibold text-blue-600"> WHAT WE DO </h4>
         <h2 className="mt-2 text-3xl md:text-4xl font-bold text-center">
           Our <span className="text-blue-600">Core</span> Service

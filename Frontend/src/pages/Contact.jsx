@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <>
     <ContactMain/>
-    <section className="max-w-7xl mx-auto px-8 py-20">
+    <section id="form" className="max-w-7xl mx-auto px-8 py-20">
       <div className="flex flex-col md:flex-row  mt-10">
         <div className="w-full md:w-1/2 text-center md:text-left  flex flex-col items-center md:items-start">
           <h2 className="text-3xl md:text-4xl font-bold leading-tight">

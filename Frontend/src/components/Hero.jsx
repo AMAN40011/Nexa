@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Stats from "./Stats";
-
+import {Link} from "react-router-dom";
 const Hero = () => {
   return (
     <section className=" max-w-7xl mx-auto px-8 py-12 md:py-8 flex items-center">
@@ -22,13 +22,13 @@ const Hero = () => {
             solutions, and innovative digital experiences.
           </p>
           <div className="flex justify-center md:justify-start gap-4 mt-8">
-            <Button
+           <Link to='/contact'><Button 
               className="shadow-md hover:shadow-lg hover:-translate-y-1  transition-transform duration-300"
             >
               Get Started
-            </Button>
+            </Button></Link> 
 
-            <Button variant="secondary">Learn More</Button>
+           <Link to="/about"><Button variant="secondary">Learn More</Button></Link> 
           </div>
           <Stats/>
         </div>

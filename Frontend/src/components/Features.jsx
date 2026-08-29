@@ -13,18 +13,21 @@ const Features = () => {
     title: "Modern Technology",
     description:
       "We use modern technologies to build fast and reliable digital solutions.",
+      link:"/services#Technologies"
   },
   {
     icon: <FaUsers />,
     title: "Experienced Team",
     description:
       "Our team focuses on creating practical solutions that solve real business problems.",
+       link:"/about#team"
   },
   {
     icon: <FaUserCheck />,
     title: "User Focused",
     description:
       "We design simple and intuitive experiences that users enjoy.",
+       link:"/services#Process"
   },
 ];
   return (
@@ -40,10 +43,11 @@ const Features = () => {
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
        {
         features.map((feature)=>(
-            <Card key={feature.title}
+           <Card key={feature.title}
              icon={feature.icon}
             title={feature.title}
-            description={feature.description}/>
+            description={feature.description}
+            link={feature.link}/>
         ))
        }
       </div>

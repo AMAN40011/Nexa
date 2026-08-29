@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Card = ({icon,title,description}) => {
+const Card = ({icon,title,description,link}) => {
   return (
     <div className="group border p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       
@@ -17,8 +18,8 @@ const Card = ({icon,title,description}) => {
       <p className="mt-3 text-gray-600">
         {description}
       </p>
-       <div className='mt-4'>
-        <a href="#" className='text-blue-600'> Learn More → </a>
+       <div className='mt-4'><Link to={link} className='text-blue-600'>Learn More → </Link>
+       
        </div>
        
       

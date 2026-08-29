@@ -39,7 +39,7 @@ const About = () => {
         </div>
       </section>
       <OurStory />
-      <Team />
+      <Team  />
       <MissionVision />
     </>
   );

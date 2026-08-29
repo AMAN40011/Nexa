@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -9,13 +10,16 @@ const CTA = () => {
         <p className="mt-4 max-w-2xl text-blue-100">
           Let's work together to bring your idea to life with our expertise and innovative solution 
         </p></div> <div className="flex flex-wrap justify-center gap-3">
-  <Button variant="terniary">
+ <Link to="/Contact"><Button variant="terniary">
     Get Started →
   </Button>
-
+</Link> 
+<Link to="/Contact#form">
   <Button className="border border-white">
     Contact Us 💬
   </Button>
+</Link>
+
 </div>
         
       

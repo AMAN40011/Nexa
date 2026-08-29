@@ -8,6 +8,7 @@ import {
   FaPaperPlane,
   FaChartLine,
 } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Process = () => {
   const process = [
   {
@@ -48,7 +49,7 @@ const Process = () => {
 ];
 
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20 ">
+    <section id="Process" className="max-w-7xl mx-auto px-8 py-20 ">
       <div className="flex flex-col justify-between items-center max-w-3xl mx-auto">
         <h4 className="text-blue-600 font-semibold">OUR PROCESS</h4>
 
@@ -111,7 +112,10 @@ const Process = () => {
         </div>
 
         <div className="md:ml-auto">
-          <Button variant="secondary">Get in Touch →</Button>
+          <Link to="/contact#form">
+            <Button variant="secondary">Get in Touch →</Button>
+            </Link>
+        
         </div>
       </div>
     </section>
