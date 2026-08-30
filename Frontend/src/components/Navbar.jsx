@@ -8,19 +8,27 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { getCurrentUser } from "../services/auth";
 const Navbar = () => {
+useEffect(() => {
+  const checkAuth = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:3000/user/me",
+        {
+          withCredentials: true,
+        }
+      );
 
-   useEffect(() => {
-  const checkUser = async () => {
-    const data = await getCurrentUser();
-
-    if (data?.success) {
-      setIsButton("Logout");
-    } else {
+      if (response.data.success) {
+        setIsButton("Logout");
+      } else {
+        setIsButton("Login");
+      }
+    } catch (error) {
       setIsButton("Login");
     }
   };
 
-  checkUser();
+  checkAuth();
 }, []);
 
   const logout = async () => {
