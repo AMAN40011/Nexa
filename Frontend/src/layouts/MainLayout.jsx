@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToHash from "../components/ScrollToHash";
+import { Toaster } from "react-hot-toast";
 
 function MainLayout() {
   return (
@@ -12,6 +13,7 @@ function MainLayout() {
         <Outlet />
       </main>
       <Footer />
+       <Toaster />
     </div>
   );
 }

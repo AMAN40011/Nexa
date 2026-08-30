@@ -8,6 +8,7 @@ const Button = ({children,className="",variant = "primary" }) => {
   secondary:
     "bg-white text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition-colors transition-transform duration-300 hover:-translate-y-1",
     terniary:"bg-white text-blue-600 hover:bg-gray-100",
+   
 };
 
   return (
