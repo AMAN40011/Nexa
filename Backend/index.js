@@ -20,7 +20,7 @@ try{
 }
 
 const corsOptions = {
-origin: 'http://localhost:5173',
+origin: 'https://nexatech-seven.vercel.app/',
 methods: 'GET,POST,PUT,DELETE',
 allowedHeaders: ['Content-Type', 'Authorization'],
 optionsSuccessStatus: 200, // For legacy browsers
