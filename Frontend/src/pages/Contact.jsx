@@ -43,9 +43,7 @@ const Contact = () => {
       setEmail("");
       setMessage("");
     } catch (error) {
-      
       toast.error(error.message);
-
     }
   };
 
@@ -130,10 +128,9 @@ const Contact = () => {
               Send Us a <span className="text-blue-600">Message</span>
             </h2>
             <form
-  onSubmit={contactForm}
-  className="mt-5 border rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 py-9"
->
-           
+              onSubmit={contactForm}
+              className="mt-5 border rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 py-9"
+            >
               <div>
                 <label className="block font-semibold">Name</label>
 
@@ -169,9 +166,10 @@ const Contact = () => {
                 ></textarea>
               </div>
               <div className="flex justify-center md:justify-between">
-                <Button className="mt-6" type="Submit" >Send Message</Button>
+                <Button className="mt-6" type="Submit">
+                  Send Message
+                </Button>
               </div>
-           
             </form>
           </div>
         </div>
