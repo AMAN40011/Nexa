@@ -20,10 +20,9 @@ const ServiceMain = () => {
             that help businesses innovate, grow, and stay ahead <br /> in a
             competitive digital world.
           </p>
-           <Link to="/pricing">
-             <Button className="mt-8">Explore Our Services →</Button>
-           </Link>
-        
+          <Link to="/pricing">
+            <Button className="mt-8">Explore Our Services →</Button>
+          </Link>
         </div>
         <div className="w-full md:w-1/2 mt-10 md:mt-0  overflow-hidden rounded-xl">
           <img

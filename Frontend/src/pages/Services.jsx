@@ -30,6 +30,7 @@ const Services = () => {
             }
             title="Web Development"
             description="We build fast, responsive, and scalable websites and web applications tailored to your business needs."
+             link="/Contact"
           />
           <Card
             icon={
@@ -37,6 +38,7 @@ const Services = () => {
             }
             title="Mobile App Development"
             description="We create high-performance mobile applications for iOS and Android that deliver smooth and engaging user experiences."
+            link="/Contact"
           >
             {" "}
           </Card>
@@ -46,6 +48,7 @@ const Services = () => {
             }
             title="UI/UX Design"
             description="We design intuitive and engaging interfaces that improve usability, strengthen your brand, and keep users coming back."
+             link="/Contact"
           />
           <Card
             icon={
@@ -53,6 +56,7 @@ const Services = () => {
             }
             title="Cloud Solutions"
             description="We help businesses adopt, manage, and optimize cloud technologies for better performance, flexibility, and scalability."
+             link="/Contact"
           />
           <Card
             icon={
@@ -60,6 +64,7 @@ const Services = () => {
             }
             title="AI Solutions"
             description="We develop AI-powered solutions that automate processes, improve efficiency, and help businesses make smarter decisions."
+             link="/Contact"
           />
           <Card
             icon={
@@ -67,6 +72,7 @@ const Services = () => {
             }
             title="IT Consulting"
             description="We provide practical technology guidance to help businesses solve challenges, reduce costs, and accelerate digital transformation."
+             link="/Contact"
           />
         </div>
       </section>

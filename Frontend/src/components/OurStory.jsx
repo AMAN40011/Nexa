@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBullseye } from "react-icons/fa";
-import { FaRegHeart  } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa";
 const OurStory = () => {
   const journey = [
@@ -35,7 +35,8 @@ const OurStory = () => {
         {/* Left side */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Turning Ideas Into <span className="text-blue-600">Impactful Solutions</span> 
+            Turning Ideas Into{" "}
+            <span className="text-blue-600">Impactful Solutions</span>
           </h2>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
@@ -47,41 +48,40 @@ const OurStory = () => {
           <div className="mt-8 space-y-5">
             <div className="flex items-center gap-3">
               <div className="bg-gray-100 px-4 py-4 rounded-2xl shadow-md">
-                <FaBullseye size={30} className="text-blue-600"/>
+                <FaBullseye size={30} className="text-blue-600" />
               </div>
-               <div>
-             <h3 className="text-lg font-semibold">Our Vision</h3>
-              <p className="mt-1 text-gray-600">
-                To become a trusted technology partner for businesses building
-                meaningful digital experiences.
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold">Our Vision</h3>
+                <p className="mt-1 text-gray-600">
+                  To become a trusted technology partner for businesses building
+                  meaningful digital experiences.
+                </p>
+              </div>
             </div>
-              </div>
-              <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3">
               <div className="bg-gray-100 px-4 py-4 rounded-2xl shadow-md">
-                <FaRegHeart  size={30} className="text-blue-600"/>
+                <FaRegHeart size={30} className="text-blue-600" />
               </div>
-               <div>
-             <h3 className="text-lg font-semibold">Our Values</h3>
-              <p className="mt-1 text-gray-600">
-                We value innovation, quality, transparency, and long-term
-                partnerships with our clients.
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold">Our Values</h3>
+                <p className="mt-1 text-gray-600">
+                  We value innovation, quality, transparency, and long-term
+                  partnerships with our clients.
+                </p>
+              </div>
             </div>
-              </div>
-              <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3">
               <div className="bg-gray-100 px-4 py-4 rounded-2xl shadow-md">
-                < FaHandshake size={30} className="text-blue-600"/>
+                <FaHandshake size={30} className="text-blue-600" />
               </div>
-               <div>
-             <h3 className="text-lg font-semibold">Our Approach</h3>
-              <p className="mt-1 text-gray-600">
-                We combine thoughtful design, modern technology, and
-                collaboration to create practical solutions.
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold">Our Approach</h3>
+                <p className="mt-1 text-gray-600">
+                  We combine thoughtful design, modern technology, and
+                  collaboration to create practical solutions.
+                </p>
+              </div>
             </div>
-              </div>
-              
           </div>
         </div>
 
@@ -96,7 +96,7 @@ const OurStory = () => {
       </div>
       <div className="mt-20 ">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
-          Our <span className="text-blue-600">Journey</span> 
+          Our <span className="text-blue-600">Journey</span>
         </h2>
 
         <p className="mt-4 text-gray-600 text-center max-w-2xl mx-auto">

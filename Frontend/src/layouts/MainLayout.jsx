@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToHash from "../components/ScrollToHash";
 import { Toaster } from "react-hot-toast";
+import AIAssistant from "../components/AIAssistant"
 
 function MainLayout() {
   return (
@@ -14,6 +15,7 @@ function MainLayout() {
       </main>
       <Footer />
        <Toaster />
+       <AIAssistant />
     </div>
   );
 }

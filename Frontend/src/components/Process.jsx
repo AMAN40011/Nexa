@@ -11,42 +11,42 @@ import {
 import { Link } from "react-router-dom";
 const Process = () => {
   const process = [
-  {
-    number: "01",
-    title: "Discover",
-    description:
-      "We understand your business, goals, challenges, and audience.",
-    icon: FaUsers,
-  },
-  {
-    number: "02",
-    title: "Plan",
-    description:
-      "We define the strategy, scope, and roadmap for your project.",
-    icon: FaLightbulb,
-  },
-  {
-    number: "03",
-    title: "Design & Develop",
-    description:
-      "We design and build solutions with quality, performance, and precision.",
-    icon: FaGear,
-  },
-  {
-    number: "04",
-    title: "Deliver",
-    description:
-      "We test, launch, and deliver solutions that work flawlessly.",
-    icon: FaPaperPlane,
-  },
-  {
-    number: "05",
-    title: "Support & Grow",
-    description:
-      "We provide ongoing support and help your business scale further.",
-    icon: FaChartLine,
-  },
-];
+    {
+      number: "01",
+      title: "Discover",
+      description:
+        "We understand your business, goals, challenges, and audience.",
+      icon: FaUsers,
+    },
+    {
+      number: "02",
+      title: "Plan",
+      description:
+        "We define the strategy, scope, and roadmap for your project.",
+      icon: FaLightbulb,
+    },
+    {
+      number: "03",
+      title: "Design & Develop",
+      description:
+        "We design and build solutions with quality, performance, and precision.",
+      icon: FaGear,
+    },
+    {
+      number: "04",
+      title: "Deliver",
+      description:
+        "We test, launch, and deliver solutions that work flawlessly.",
+      icon: FaPaperPlane,
+    },
+    {
+      number: "05",
+      title: "Support & Grow",
+      description:
+        "We provide ongoing support and help your business scale further.",
+      icon: FaChartLine,
+    },
+  ];
 
   return (
     <section id="Process" className="max-w-7xl mx-auto px-8 py-20 ">
@@ -64,37 +64,23 @@ const Process = () => {
         </p>
       </div>
 
-
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-      {process.map((item) => (
-        
-        <div key={item.number} className="text-center cursor-pointer">
+        {process.map((item) => (
+          <div key={item.number} className="text-center cursor-pointer">
+            <div className="mx-auto w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center shadow-sm hover:scale-105 transition-all duration-300 ">
+              <item.icon size={32} className="text-blue-600" />
+            </div>
 
+            <p className="mt-5 text-blue-600 font-semibold">{item.number}</p>
 
-           <div className="mx-auto w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center shadow-sm hover:scale-105 transition-all duration-300 ">
-            <item.icon size={32} className="text-blue-600"/>
-            </div>  
-          
-          <p className="mt-5 text-blue-600 font-semibold">
-            {item.number}
-          </p>
+            <h3 className="mt-2 text-lg font-semibold">{item.title}</h3>
 
-          <h3 className="mt-2 text-lg font-semibold">{item.title}
-
-          </h3>
-
-          <p className="mt-2 text-gray-600 leading-relaxed">
-            {item.description}
-          </p>
-
-        </div>
-
-
-      ))}
+            <p className="mt-2 text-gray-600 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        ))}
       </div>
-      
-
-
 
       <div className="mt-10 relative mt-5 px-8 py-8 bg-gradient-to-br from-indigo-900 via-blue-700 to-blue-400 rounded-2xl flex flex-col md:flex-row gap-4 items-center">
         <div className="w-14 h-14 flex items-center justify-center border rounded-full bg-gradient-to-tl from-blue-500 via-blue-800 to-blue-500">
@@ -114,8 +100,7 @@ const Process = () => {
         <div className="md:ml-auto">
           <Link to="/contact#form">
             <Button variant="secondary">Get in Touch →</Button>
-            </Link>
-        
+          </Link>
         </div>
       </div>
     </section>

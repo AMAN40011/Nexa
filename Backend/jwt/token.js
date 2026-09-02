@@ -12,6 +12,7 @@ export const generateJwtToken =  (id, res) => {
   sameSite: "lax",
   maxAge: 7 * 24 * 60 * 60 * 1000,
 });
+
     
   } catch (error) {
     return res

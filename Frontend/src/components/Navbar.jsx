@@ -7,17 +7,18 @@ import Login from "../pages/Login";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { getCurrentUser } from "../services/auth";
+import { FaUser } from "react-icons/fa";
 const Navbar = () => {
 useEffect(() => {
   const checkAuth = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/user/me",
+         `${import.meta.env.VITE_API_URL}/user/me`,
         {
           withCredentials: true,
         }
       );
-
+      
       if (response.data.success) {
         setIsButton("Logout");
       } else {
@@ -34,7 +35,7 @@ useEffect(() => {
   const logout = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:3000/user/logout",
+      `${import.meta.env.VITE_API_URL}/user/logout`,
       
       {
         withCredentials: true,
@@ -104,6 +105,21 @@ useEffect(() => {
   >
     Logout
   </button>
+)}{isButton === "Logout" && (
+  <NavLink
+    to="/profile"
+    onClick={() => setIsMenuOpen(false)}
+    className={({ isActive }) =>
+      `w-full px-3 py-2 rounded flex items-center gap-1 hover:bg-gray-100 hover:text-blue-600 ${
+        isActive
+          ? "bg-blue-100 text-blue-600 font-semibold"
+          : "text-gray-700"
+      }`
+    }
+  >
+    <FaUser />
+    Profile
+  </NavLink>
 )}
         </div>
 
@@ -147,6 +163,21 @@ useEffect(() => {
   >
     Logout
   </button>
+)}{isButton === "Logout" && (
+  <NavLink
+    to="/profile"
+    onClick={() => setIsMenuOpen(false)}
+    className={({ isActive }) =>
+      `w-full px-3 py-2 rounded flex items-center justify-center gap-1 hover:bg-gray-100 hover:text-blue-600 ${
+        isActive
+          ? "bg-blue-100 text-blue-600 font-semibold"
+          : "text-gray-700"
+      }`
+    }
+  >
+    <FaUser />
+    Profile
+  </NavLink>
 )}
             </div>
           </div>

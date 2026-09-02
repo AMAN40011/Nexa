@@ -24,7 +24,7 @@ const Pricing = () => {
           price="$99"
           description="For growing businesses."
           features={["Responsive Website", "10 Pages", "Priority Support"]}
-         popular={true}
+          popular={true}
         />
 
         <PricingCard
@@ -33,7 +33,6 @@ const Pricing = () => {
           description="For large businesses."
           features={["Custom Website", "Unlimited Pages", "24/7 Support"]}
         />
-        
       </div>
     </section>
   );

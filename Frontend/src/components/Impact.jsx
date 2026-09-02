@@ -1,14 +1,8 @@
-import React from 'react'
-import {
-  FaUsers,
-  FaCode,
-  FaTrophy,
-  FaStar,
-} from "react-icons/fa";
+import React from "react";
+import { FaUsers, FaCode, FaTrophy, FaStar } from "react-icons/fa";
 
 const Impact = () => {
-
-const stats = [
+  const stats = [
     {
       value: "50+",
       label: "Happy Clients",
@@ -32,9 +26,8 @@ const stats = [
   ];
 
   return (
-  <section className='max-w-7xl mx-auto px-8 py-16'>
-
-    <div className='rounded-2xl bg-blue-50 px-8 py-10'>
+    <section className="max-w-7xl mx-auto px-8 py-16">
+      <div className="rounded-2xl bg-blue-50 px-8 py-10">
         <div className="text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-sm text-blue-600">
             <span className="h-2 w-2 rounded-full bg-blue-600"></span>
@@ -59,22 +52,16 @@ const stats = [
               </div>
 
               <div>
-                <p className="text-2xl font-bold">
-                  {stat.value}
-                </p>
+                <p className="text-2xl font-bold">{stat.value}</p>
 
-                <p className="text-sm text-gray-500">
-                  {stat.label}
-                </p>
+                <p className="text-sm text-gray-500">{stat.label}</p>
               </div>
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+};
 
-    </div>
-
-  </section>
-  )
-}
-
-export default Impact
+export default Impact;
